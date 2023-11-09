@@ -42,13 +42,14 @@ FlightRouter.post('/api/flights', async (req, res) => {
 });
 
 // GET /api/flights
-FlightRouter.get('/api/flights/:id', async (req, res) => {
-    const {id} = req.params
-    try {
+FlightRouter.get('/api/flights', async (req, res) => {
+    
+try{
+    
      
-      const flights = await FlightModel.find({_id:id});
-  
-      return res.status(200).json(flights);
+     const flight = await FlightModel.find({});
+
+      return res.status(200).json(flight);
     } catch (error) {
       console.error(error);
       return res.status(500).json({ error: 'Internal Server Error' });
