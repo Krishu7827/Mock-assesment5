@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 const {UserRouter} = require("./routers/user.router")
 const {FlightRouter} = require("./routers/flight.router")
 const {BookingRouter} = require("./routers/booking.router")
+const cors = require("cors")
 const app = express();
-
+app.use(cors())
 app.use(express.json())
 require("dotenv").config()
 const PORT = process.env.PORT || 3000;
