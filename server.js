@@ -19,7 +19,9 @@ mongoose.connection.on('connected', () => {
 mongoose.connection.on('error', (err) => {
   console.error(`MongoDB connection error: ${err}`);
 });
-
+app.get("/",(req,res)=>{
+    res.send("welcome")
+})
 app.use("/users",UserRouter)
 app.use(FlightRouter)
 app.use(BookingRouter)
