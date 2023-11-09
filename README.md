@@ -31,16 +31,4 @@ This is the backend for an Air Ticket Booking system built using Node.js, Expres
 4. Set up your MongoDB connection in `server.js`.
 5. Run the server: `node server.js`.
 
-## Contributing
 
-Feel free to contribute to this project. Follow the standard Git workflow:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/your-feature`.
-3. Commit your changes: `git commit -m 'Add your feature'`.
-4. Push to the branch: `git push origin feature/your-feature`.
-5. Create a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
